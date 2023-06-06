@@ -6,7 +6,6 @@ if number < 0:
     num = int(str_num[-1])* -1
 elif number > 0:
     num = int(str_num[-1])
-
 if num == 0:
     str_num1 = "and is zero"
 elif num < 6:
