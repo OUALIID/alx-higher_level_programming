@@ -3,7 +3,7 @@ import random
 number = random.randint(-10000, 10000)
 str_num = str(number)
 if number < 0:
-    num = int(str_num[-1])* -1
+    num = int(str_num[-1]) * -1
 elif number > 0:
     num = int(str_num[-1])
 if num == 0:
