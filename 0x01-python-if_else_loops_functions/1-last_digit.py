@@ -13,4 +13,4 @@ elif num < 6:
     str_num1 = "and is less than 6 and not 0"
 elif num > 5:
     str_num1 = "and is greater than 5"
-print("Last digit of", number, "is", num, "and",  str_num1)
+print("Last digit of", number, "is", num,  str_num1)
