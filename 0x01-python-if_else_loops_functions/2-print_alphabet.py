@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-formatted_alphabet = alphabet.format()
-print(formatted_alphabet, end="")
+for i in range(ord('a'), ord('z')+1):
+    print("{}".format(chr(i)), end='')
