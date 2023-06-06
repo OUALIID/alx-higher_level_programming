@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-for x in "abcdefghijklmnopqrstuvwxyz":
-  print(x,end="")
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+formatted_alphabet = alphabet.format()
+print(formatted_alphabet, end="")
