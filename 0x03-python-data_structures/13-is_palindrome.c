@@ -46,6 +46,7 @@ int is_palindrome(listint_t **head)
 			is_palindrome = 0;
 			break;
 		}
+
 		first_half = first_half->next;
 		second_half = second_half->next;
 	}
@@ -65,3 +66,4 @@ int is_palindrome(listint_t **head)
 
 	return is_palindrome;
 }
+
