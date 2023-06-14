@@ -4,5 +4,6 @@ def update_dictionary(a_dictionary, key, value):
         if key_search == key:
             a_dictionary[key] = value
             return a_dictionary
-    a_dictionary[key] = value
+    dictionary[key] = value
     return a_dictionary
+ 
