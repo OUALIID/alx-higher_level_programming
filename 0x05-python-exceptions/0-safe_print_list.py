@@ -14,4 +14,4 @@ def safe_print_list(my_list=[], x=0):
         print("")
     except ValueError:
         pass
-    return(j)
+    return (j)
