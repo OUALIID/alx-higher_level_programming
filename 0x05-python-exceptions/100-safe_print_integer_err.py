@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-from sys import exc_info as err
+from sys import exc_info as error, stderr
 
 
-def safe_function(fct, *args):
+def safe_print_integer_err(value):
     try:
-        return fct(*args)
-    except Exception:
-        print("Exception: {}".format(err()[1]), file=stderror)
-        return None
+        print("{:d}".format(value))
+        return (True)
+    except (ValueError, TypeError):
+        print("Exception: {}".format(error()[1]), file=stderr)
+        return (False)
