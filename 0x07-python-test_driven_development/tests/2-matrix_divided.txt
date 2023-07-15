@@ -64,7 +64,7 @@ Traceback (most recent call last):
 TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
 
 >>> matrix = [[1,2],[1,2]]
->>> print(matrix_devided(matrix, "st"))
+>>> print(matrix_divided(matrix, "st"))
 Traceback (most recent call last):
 ...
 TypeError: div must be a number
