@@ -1,0 +1,18 @@
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> say_my_name("Asmaa", "I am The Best")
+My name is Asmaa I am The Best
+
+>>> say_my_name("PIPLO")
+My name is PIPLO
+
+>>> say_my_name("Oualid", 12)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+>>> say_my_name(50, "elhadim")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
