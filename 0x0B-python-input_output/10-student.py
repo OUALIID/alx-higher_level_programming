@@ -21,7 +21,7 @@ class Student:
                     for attr in attrs:
                         if hasattr(self, attr):
                             dictionary[attr] = getattr(self, attr)
-                    return dictionary1
+                    return dictionary
         else:
             dictionary = {
                 'age': self.age,
