@@ -12,6 +12,9 @@ class Student:
 
     def to_json(self, attrs=None):
         if attrs is not None:
+            if not attrs:
+                return {}
+
             for attr in attrs:
                 if not isinstance(attr, str):
                     pass
