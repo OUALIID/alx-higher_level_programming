@@ -17,11 +17,11 @@ class Student:
                     pass
 
                 else:
-                    dictionary_1 = {}
+                    dictionary = {}
                     for attr in attrs:
                         if hasattr(self, attr):
-                            dictionary_1[attr] = getattr(self, attr)
-                    return dictionary_1
+                            dictionary[attr] = getattr(self, attr)
+                    return dictionary1
         else:
             dictionary = {
                 'age': self.age,
