@@ -29,4 +29,3 @@ class Student:
                 'first_name': self.first_name
             }
             return dictionary
-            
