@@ -73,3 +73,10 @@ class Rectangle(Base):
         Add area defects public method (self)
         """
         return self.width * self.height
+
+    def display(self):
+        """
+        that prints in stdout the Rectangle instance with the character #
+        """
+        for _ in range(self.height):
+            print("#" * self.width)
