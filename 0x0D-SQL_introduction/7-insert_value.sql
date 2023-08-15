@@ -7,5 +7,7 @@
     - VALUES: Indicates the values you're inserting into the columns.
     - (89, 'Best School'): The values you're inserting into the columns.
 */
-INSERT INTO first_table
-SET id = 89, name = 'Best School';
+
+INSERT INTO first_table (id, name)
+VALUES (89, 'Best School')
+ON DUPLICATE KEY UPDATE id = id;
