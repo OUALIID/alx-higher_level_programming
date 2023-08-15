@@ -8,4 +8,4 @@
     - (89, 'Best School'): The values you're inserting into the columns.
 */
 INSERT INTO first_table (id, name)
-VALUES (89, 'Best School')
+VALUES (89, Best School)
