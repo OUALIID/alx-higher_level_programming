@@ -8,4 +8,6 @@
     - (89, 'Best School'): The values you're inserting into the columns.
 */
 INSERT INTO first_table (id, name)
-VALUES (89, Best School)
+SELECT 89, 'Best School'
+FROM dual
+WHERE NOT EXISTS (SELECT 1 FROM first_table WHERE id = 89);
