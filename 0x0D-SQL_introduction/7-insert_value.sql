@@ -9,5 +9,3 @@
 */
 INSERT INTO first_table (id, name)
 SELECT 89, 'Best School'
-FROM dual
-WHERE NOT EXISTS (SELECT 1 FROM first_table WHERE id = 89);
