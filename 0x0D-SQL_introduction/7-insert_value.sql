@@ -1,4 +1,4 @@
--- The script inserts a new row into the table first_table in the database hbtn_0c_0.
+-- The script that inserts a new row in the table first_table.
 /*
     - INSERT INTO: Adds a new row into a table.
     - (id, name): Specifies the columns you're inserting data into.
