@@ -5,5 +5,4 @@
    - ";" (Semicolon): Marks the end of the command.
    - SHOW DATABASES; asks MySQL to list available databases.
 */
-
 SHOW DATABASES;
