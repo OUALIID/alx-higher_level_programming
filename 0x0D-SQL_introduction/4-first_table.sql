@@ -5,7 +5,7 @@
     - id INT: An integer column named "id".
     - name VARCHAR(256): A text column named "name" with a maximum length of 256 characters.
 */
-CREATE TABLE table_name (
+CREATE TABLE IF NOT EXISTS first_table (
     id INT,
     name VARCHAR(256)
 );
