@@ -12,4 +12,8 @@ for (const i of args) {
     secondLargest = number;
   }
 }
-console.log(secondLargest);
+if (args <= 1) {
+  console.log(1);
+} else {
+  console.log(secondLargest);
+}
