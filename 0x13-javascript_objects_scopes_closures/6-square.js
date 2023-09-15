@@ -17,6 +17,5 @@ class Square extends square {
       console.log(row);
     }
   }
-
 }
 module.exports = Square;
