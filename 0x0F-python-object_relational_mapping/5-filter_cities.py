@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Same code as previous. But this time, safe from MySQL injections!
+Use the state name as an argument to list all cities in that state,
+using the database hbtn_0e_4_usa
 """
 import MySQLdb
 import sys
