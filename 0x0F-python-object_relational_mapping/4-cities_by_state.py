@@ -11,7 +11,6 @@ def main():
     username = args[0]
     password = args[1]
     database = args[2]
-    state_name = args[3]
     connection = MySQLdb.connect(
         user=username,
         password=password,
@@ -21,7 +20,10 @@ def main():
 
     )
     cursor = connection.cursor()
-    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY %s ""ORDER BY id ASC;", (state_name + "%",))
+    cursor.execute("SELECT cities.id, cities.name, "
+                   "states.name FROM cities "
+                   "JOIN states ON cities.state_id = states.id "
+                   "ORDER BY cities.id ASC;")
     for i in cursor.fetchall():
         print(i)
     cursor.close()
