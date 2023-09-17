@@ -27,8 +27,7 @@ def main():
                    "WHERE states.name = %s "
                    "ORDER BY cities.id ASC;", (state_name,))
     citys = [state_name[0] for state_name in cursor.fetchall()]
-    result_str = ', '.join(citys)
-    print(result_str)
+    print(', '.join(citys))
 
     cursor.close()
     connection.close()
