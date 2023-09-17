@@ -19,7 +19,7 @@ def main():
         port=3306
     )
     cursor = connection.cursor()
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%';")
+    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%';")
     for i in cursor.fetchall():
         print(i)
     cursor.close()
