@@ -26,7 +26,7 @@ def main():
                    "JOIN states ON cities.state_id = states.id "
                    "WHERE states.name = %s "
                    "ORDER BY cities.id ASC;", (state_name,))
-    citys = [data[0] for data in cursor.fetchall()]
+    citys = [state_name[0] for state_name in cursor.fetchall()]
     result_str = ', '.join(citys)
     print(result_str)
 
