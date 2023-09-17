@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-List all cases from database hbtn_0e_0_usa
+List all cases whose name starts with N from database hbtn_0e_0_usa
 """
 import MySQLdb
 import sys
