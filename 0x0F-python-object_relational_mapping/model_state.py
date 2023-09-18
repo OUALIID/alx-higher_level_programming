@@ -4,7 +4,6 @@ cat 6-model_state.sqlStart link class to table in database
 """
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
-import sys
 
 
 Base = declarative_base()
