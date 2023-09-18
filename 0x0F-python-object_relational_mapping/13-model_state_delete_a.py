@@ -25,6 +25,4 @@ if __name__ == "__main__":
     for state in delete_states:
         session.delete(state)
     session.commit()
-    print("{}".format(len(delete_states)))
-
     session.close()
