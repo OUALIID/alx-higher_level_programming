@@ -22,4 +22,4 @@ if __name__ == "__main__":
     if states is None:
         print("Nothing\n")
     else:
-        print("{}: {}".format(states.id, states.name))
+        print(f"{states.id}: {states.name}")
