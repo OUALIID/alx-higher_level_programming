@@ -3,9 +3,10 @@
 Print the first state object from the database hbtn_0e_6_usa
 """
 from sqlalchemy import create_engine
-from model_state import Base, State
+from model_state import State
 from sqlalchemy.orm import sessionmaker
 import sys
+
 
 if __name__ == "__main__":
     engine = create_engine(
