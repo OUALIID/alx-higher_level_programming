@@ -21,7 +21,7 @@ if __name__ == "__main__":
     states = State(name="Louisiana")
     update_state = session.query(State).filter_by(id=2).first()
     if update_state:
-        update_state.name = "Louisiana"
+        update_state.name = "New Mexico"
         session.commit()
         print(update_state.id)
     else:

@@ -2,7 +2,7 @@
 
 /*
 SHOW DATABASES;
-DROP TABLE hbtn_0e_6_usa;
+DROP DATABASE hbtn_0e_6_usa;
 SELECT '----------------------------------------';
 SHOW DATABASES;
 */
