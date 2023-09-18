@@ -19,9 +19,12 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     states = State(name="Louisiana")
-    update_state = session.query(State).filter_by(id=1).first()
-    session.add(update_state)
-    session.commit()
-    print(update_state.id)
+    update_state = session.query(State).filter_by(id=2).first()
+    if update_state:
+        update_state.name = "Louisiana"
+        session.commit()
+        print(update_state.id)
+    else:
+        print("State not found")
 
     session.close()
