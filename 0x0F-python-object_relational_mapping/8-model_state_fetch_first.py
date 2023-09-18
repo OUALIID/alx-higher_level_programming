@@ -18,7 +18,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     states = session.query(State).order_by(State.id).first()
-    if states == 0:
+    if states is None:
         print("\n")
     else:
         print("{}: {}".format(states.id, states.name))
