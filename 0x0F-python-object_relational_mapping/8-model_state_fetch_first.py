@@ -23,4 +23,3 @@ if __name__ == "__main__":
         print("Nothing\n")
     else:
         print("{}: {}".format(states.id, states.name))
-session.close()
