@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Prints the status object with the name passed as an argument from the database hbtn_0e_6_usa
+Prints the status object with the name passed
+as an argument from the database hbtn_0e_6_usa
 """
 from sqlalchemy import create_engine
 from model_state import Base, State
@@ -22,4 +23,4 @@ if __name__ == "__main__":
     if states:
         print(states.id)
     else:
-        print("not found")
+        print("Not found")
