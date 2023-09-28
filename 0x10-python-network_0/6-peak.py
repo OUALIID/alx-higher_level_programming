@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 # A function that finds a vertex in a list of unsorted integers.
+
+
 def find_peak(list_of_integers):
     """ the function find_peak """
     for i in range(1, len(list_of_integers) - 1):
