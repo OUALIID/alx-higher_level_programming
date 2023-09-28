@@ -3,7 +3,7 @@
 
 
 def find_peak(list_of_integers):
-    """ the function find_peak """
+    """the function find_peak"""
     for i in range(1, len(list_of_integers) - 1):
         prev = list_of_integers[i - 1]
         follow = list_of_integers[i + 1]
