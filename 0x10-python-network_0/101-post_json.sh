@@ -1,3 +1,3 @@
 #!/bin/bash
-# A Bash script makes a request to 0.0.0.0:5000/catch_me causing the server to respond with a message containing You've got me!
+# A Bash script that sends a JSON POST request to the URL passed as the first argument, and displays the response body.
 curl -sX POST -H "Content-Type: application/json" --data "@$2" "$1"
