@@ -3,7 +3,7 @@
 import urllib.request as urllib
 
 if __name__ == "__main__":
-    with urllib.urlopen('http://oualid-elhadim.tech/') as response:
+    with urllib.urlopen('https://alx-intranet.hbtn.io/status') as response:
         content = response.read()
     print("Body response:")
     print(f"\t- type: {type(content)}")
