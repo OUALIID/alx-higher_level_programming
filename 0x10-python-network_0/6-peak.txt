@@ -1,2 +1,1 @@
-# This is a complication
-O(log(n))
+o(log(n))
