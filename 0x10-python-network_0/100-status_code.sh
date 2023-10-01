@@ -1,5 +1,3 @@
 #!/bin/bash
-# A bash script gets request status code. -w to output words.
-# -w "%{http_code}": This option tells `curl` to print a specific 
-# piece of information after the request is completed. 
+# A bash script that gets the status code of a request. -w for word-out.
 curl -s -w %"{http_code}" -o /dev/null "$1"
