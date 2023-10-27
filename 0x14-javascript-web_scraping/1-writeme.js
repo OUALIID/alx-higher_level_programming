@@ -11,6 +11,5 @@ fs.writeFile(file[0], file[1], 'utf-8', (err) => {
       path: err.path
     };
     console.error(error);
-    return;
   }
 });
