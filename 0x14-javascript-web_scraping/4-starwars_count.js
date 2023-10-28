@@ -7,12 +7,14 @@ request(url, (err, response, body) => {
     console.log('error_1');
   }
   const films = JSON.parse(body).results;
+  const characterId = '18';
   let total = 0;
+  
   for (const film of films) {
     if (film.characters) {
       const date = film.characters;
       for (const cur of date) {
-        if (cur === 'https://swapi-api.alx-tools.com/api/people/18/') {
+        if (cur === `https://swapi-api.alx-tools.com/api/people/${characterId}/`) {
           total++;
         }
       }
