@@ -7,7 +7,12 @@ request(url, (err, response, body) => {
   if (err) {
     return;
   }
+
   const films = JSON.parse(body);
+  if (!films.results) {
+    return;
+}
+
   const characterId = '18';
   let total = 0;
 
