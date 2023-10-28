@@ -11,13 +11,8 @@ request(url, (err, response, body) => {
   let total = 0;
 
   for (const film of films) {
-    if (film.characters) {
-      const date = film.characters;
-      for (const cur of date) {
-        if (cur === (`https://swapi-api.alx-tools.com/api/people/${characterId}/`)) {
-          total++;
-        }
-      }
+    if (film.characters.includes(`https://swapi-api.alx-tools.com/api/people/${characterId}/`)) {
+      total++;
     }
   }
   console.log(total);
