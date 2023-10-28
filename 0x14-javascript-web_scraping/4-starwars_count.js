@@ -7,11 +7,11 @@ request(url, (err, response, body) => {
   if (err) {
     return;
   }
-  const films = JSON.parse(body).results;
+  const films = JSON.parse(body);
   const characterId = '18';
   let total = 0;
 
-  for (const film of films) {
+  for (const film of films.results) {
     if (film.characters.includes(`https://swapi-api.alx-tools.com/api/people/${characterId}/`)) {
       total++;
     }
