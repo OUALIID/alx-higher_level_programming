@@ -6,12 +6,12 @@ const url = id[0];
 request(url, (err, response, body) => {
   if (err) {
     return;
-}
+  }
 
   const films = JSON.parse(body).results;
   if (!films) {
     return;
-}
+  }
 
   const characterId = '18';
   let total = 0;
@@ -20,6 +20,6 @@ request(url, (err, response, body) => {
     if (film.characters.includes(`https://swapi-api.alx-tools.com/api/people/${characterId}/`)) {
       total++;
     }
-}
+  }
   console.log(total);
 });

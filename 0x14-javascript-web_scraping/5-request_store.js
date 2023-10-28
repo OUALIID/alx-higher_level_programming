@@ -14,9 +14,9 @@ request(url, (err, response, body) => {
     if (film.characters) {
       const date = film.characters;
       for (const cur of date) {
-        if (cur === (`https://swapi-api.alx-tools.com/api/people/${characterId}/`)) {
+        if (cur === `https://swapi-api.alx-tools.com/api/people/${characterId}/`) {
           total++;
-        }
+      }
       }
     }
   }
