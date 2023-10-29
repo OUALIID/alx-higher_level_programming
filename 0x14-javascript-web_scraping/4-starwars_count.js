@@ -13,8 +13,8 @@ request(url, (err, response, body) => {
     if (film.characters) {
       const date = film.characters;
       for (const cur of date) {
-        if (cur.endsWith(`/18/`)) {
-          total++
+        if (cur.endsWith('/18/')) {
+          total++;
         }
       }
     }
