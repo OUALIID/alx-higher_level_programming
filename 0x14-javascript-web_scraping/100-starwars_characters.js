@@ -9,7 +9,7 @@ request(url, (err, response, body) => {
   const dates = JSON.parse(body).characters;
   dates.forEach(date => {
     request(date, (dateErr, dateResponse, dateBody) => {
-      if (!dateErr) {
+      if (date) {
         console.log(JSON.parse(dateBody).name);
       }
     });
