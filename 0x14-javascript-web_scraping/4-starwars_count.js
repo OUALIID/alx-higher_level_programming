@@ -4,11 +4,10 @@ const id = process.argv.slice(2);
 const url = id[0];
 request(url, (err, response, body) => {
   if (err) {
-    console.log('error_1');
+    return;
   }
   const films = JSON.parse(body).results;
   let total = 0;
-
   for (const film of films) {
     if (film.characters) {
       const date = film.characters;
