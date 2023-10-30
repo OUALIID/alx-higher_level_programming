@@ -10,8 +10,7 @@ request(url, (err, response, body) => {
   dates.forEach(date => {
     request(date, (dateErr, dateResponse, dateBody) => {
       if (!dateErr) {
-        const namecharacter = JSON.parse(dateBody);
-        console.log(namecharacter.name);
+        console.log(JSON.parse(dateBody).name);
       }
     });
   });
